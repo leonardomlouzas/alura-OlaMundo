@@ -1,10 +1,13 @@
-import Banner from "/src/components/Banner";
+import "./index.css";
+import posts from "/src/json/posts.json";
+import PostCard from "/src/components/PostCard";
 
 export default function Index() {
   return (
-    <main>
-      <Banner />
-      <h1>Olá, Mundo!</h1>
-    </main>
+    <ul className="posts">
+      {posts.map((post) => (
+        <PostCard key={post.id} id={post.id} post={post} />
+      ))}
+    </ul>
   );
 }
