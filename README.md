@@ -6,6 +6,6 @@ Repositorio base para desenvolvimento do projeto Olá Mundo da trilha Front End 
 
 - Ter o Node instalado;
 
-## Configuração
-
 ## Execução
+
+Entre na pasta olaMundo e rode o comando `npm start`
